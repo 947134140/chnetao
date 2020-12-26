@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <input id="text"> <button id="btn">添加元素</button>
+    </ul>
+    <span id="span">hello</span>
+    <script>
+        // 创建元素
+        // var div = document.createElement('div');
+        // console.log(div); //
+
+        //获取元素
+        var text = document.getElementById("text");
+        var btn = document.getElementById("btn");
+        var list = document.getElementById("list")
+
+        // 添加事件
+        // btn.onclick = function( ){
+        //     //获取用户输入的neir
+        //     console.log(text.value);
+        //     var li = document.createElement("li");
+        //     li.innerText = text.value;
+        //     list.appendChild(li); //将 li 追加到list的子元素最后的位置
+        // }
+
+        // 3秒之后 list把btn删掉
+        // setTimeout(function(){
+        //     list.removeChild(btn); //从list中移除btn
+        // },3000)
+
+
+            //list 把span 替换给 btn
+        // setTimeout(function(){
+        //     list.replaceChild(span , btn)
+        // },3000)
+
+           // list 把 span 插入到btn前面
+        //    setTimeout(function(){
+        //     list.insertBefore(span , btn);
+        //    },3000)
+
+        // 克隆方法  cloneNode
+        var list1 = list.cloneNode(true);
+        console.log(list1);
+        console.log(list);
+        
+        </script>
+</body>
+</html>

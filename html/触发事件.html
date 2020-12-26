@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background:pink;
+        }
+        ul li{
+            background-color:rgb(196, 196, 209);
+            margin-top: 5px;
+            width: 300px;
+        }
+        li a {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button id="btn">按钮</button>
+    <div id="div1">
+        <span></span>
+    </div> -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>按钮</button>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+   
+    <script>
+        // var btn = document.getElementById("btn");
+        // btn.onclick = function( ) {
+        //     alert("点秋香");
+        // }
+        // var div = document.querySelector("div");
+        // div.onclick = function (){
+        //     alert("我被选中了");
+        // }
+
+        // innerText 不识别html标签  去除空格和换行
+        // innerHtml 识别html标签    保留空格和换行
+
+        // 样式属性
+        //1 ，行内样式属性  style
+        // 1. 获取元素
+        // var div = document.querySelector("div");
+        // // 2 ， 注册时间 处理程序
+        // div.onclick = function( ) {
+        //     //div.style 里的属性采用驼峰命名法
+        //     // div.style.backgroundColor = "blue";
+        //     this.style.backgroundColor = "blue";
+        // }
+        
+        //     var div = document.querySelector("div");
+        //    console.log( div.parentNode);
+
+        // 子节点；
+            // var div  = document.querySelector("div");
+            // console.log(div.childNodes); // 得到的是所有节点 含有文本节点3 ， 空格 ， 换行
+            // console.log(div.children);
+
+            // firstchild 第一个子节点 不管是元素节点还是文本节点
+            // lastchild 第一个子节点 不管是元素节点还是文本节点
+
+            // firstElementchild 获取第一个子元素节点 (iE9以上才能使用)
+            // lastElementchild 获取第一个子元素节点 (iE9以上才能使用)
+
+            // 解决兼容性问题：
+            // 第一个子元素节点 console.log(div.children[0]);
+            // 获取最后一个子元素节点 console.log(div.children[div.children.length - 1]);
+
+            // 兄弟节点
+            // var div  = document.querySelector("div");
+            // console.log(div.nextSibling); 下一个兄弟节点 包括元素节点 或 文本节点
+            // console.log(div.previousSibling); 上一个兄弟节点 包括元素节点 或 文本节点
+            // console.log(div.nextElementSibling); 下一个元素节点 (只有ie9以上才支持)
+            // console.log(div.previousElementSibling); 上一个元素节点 (只有ie9以上才支持)
+            // 如果没有元素返回值为 null；
+
+            // 创建元素节点：
+            // var li =  document.createElement("li");
+            // // 添加节点：node.appendChild(child) node 父级  child 子级
+            // var  div = document.querySelector("div");
+            // div.appendChild(li); //从后面添加
+            // // 添加节点 node.inserBefore(child , 指定元素)；
+            // var li2 = document.createElement("li");
+            // div.insertBefore(li2 , div.children[0]);
+            // 我们想要页面添加一个元素 ； 1 创建元素 2 . 添加元素
+            
+          /*   var btn  = document.querySelector("button");
+            var ul = document.querySelector("ul");
+            var  text = document.querySelector("textarea");
+            btn.onclick = function ( ) {
+                if(text.value == "") {
+                    alert("没有输入neir");
+                    // return false;
+                }else if( text.value != ""){
+                    var li = document.createElement("li"); 
+                                   
+                    ul.insertBefore(li , ul.children[0]);
+                    li.innerHTML = text.value + "<a href = 'javascript:;'>删除</a>";
+                    // li.style.backgroundColor = ""; 
+                   var as = document.querySelectorAll("a");
+                   for ( var i = 0 ; i < as.length; i++){
+                       as[i].onclick = function ( ) {
+                           ul.removeChild(this.parentNode);
+                       }
+                   }
+                }
+            } */
+
+            // 复制节点: node.cloneNode( );
+            // 口号里为空或者里面是false 浅拷贝 只复制标签不复制内容
+            // 如果括号里为 true 为深拷贝 标签内容都复制
+
+
+            // var ul = document.querySelector("ul");
+            // var li1 =  ul.children[0].cloneNode(true);
+            // ul.insertBefore(li1,ul.children[0]);
+            // ul.appendChild(li1);
+
+            // for( var k in obj) {
+            //     k 得到的是属性名
+            //     obj[k] 得到的是属性值
+            // }
+           
+
+
+
+
+    </script>
+</body>
+</html>

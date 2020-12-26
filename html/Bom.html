@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* #h11{
+            font-size: 30px;
+        } */
+        .cls{
+            color: red;
+        }
+        h1{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+   用户名 <input type="text" name = "usernae"> <br>
+   密码 <input type="text" name = "password"> <br>
+   爱好 <input type="checkbox" name = "hobby"><input type="checkbox" name = "hobby"><input type="checkbox" name = "hobby"><input type="checkbox" name = "hobby"><input type="checkbox" name = "hobby">
+
+    <button id="btn">去百度</button>
+    <h1 id = "h11">我是一个标签</h1>
+    <div>
+        <li>fewwgfrge</li>
+        <li>fewwgfrge</li>
+        <li>fewwgfrge</li> 
+    </div>
+    <ul id="d">
+        <li class="cls">1</li>
+        <li class="cls">1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+    <script>
+        // console.log(window.location);
+        // window.onclick = function(){
+        //     location.reload();
+        // }
+
+        //     var btn = document.getElementById('btn')
+        // btn.onclick = function( ) {
+        //     location.href = 'http://www.baidu.com';
+        //     location.assign('http://www.baidu.com')
+        // }
+
+        //打开页面
+
+     /*   var d = window.open('http://www.baidu.com')
+       setTimeout(function(){
+           d.close()
+       }) */
+
+    //    console.log(window.history);
+
+       //forward()前进一次
+       //back()后退一次
+       //go()根据参数前进后退n次
+
+    //    浏览器信息
+    // navigator
+    //    console.log(navigator);
+    // console.log(navigator.userAgent);//用户代理
+
+
+    /*    console.log(1);
+    for ( var i = 0; i < 100; i++ ){
+        setTimeout(function( ) {
+            console.log(i);
+        },1000)
+    }
+    console.log(i); */
+
+    // console.log(window.innerWidth);
+    // console.log(window.innerHeight);
+
+    //代码分为同步和异步
+    //开定时器是同步代码，，，，执行代码是异步；
+
+
+    // setTimeout(function(){
+    //     console.log(3);
+    // },1200)
+    // console.log(4);
+
+    //Dom  文档对象模型
+    // console.log(document);
+
+
+    // 获取元素  id 获取的】是一个
+    //  var h11 =  document.getElementById('h12')  //null
+    // console.log(h11);
+        //根据标签名获取
+        // var t = document.getElementsByTagName('li') //获取多个装在一个类数组里
+        // console.log(t);
+        // console.log(t[2]);
+        // var d = document.getElementById('d');
+        // var t = d.getElementsByTagName('li')
+        // console.log(t);
+
+        // var classming = document.getElementsByClassName('cls');
+        // console.log(classming);
+
+        //根据name属性获取元素
+        // var names = document.getElementsByName('hobby');
+        // console.log(names);
+
+        //querySelector 根据选择器获取元素
+        // # . span * .a.b.c   .a,.b,.c,
+
+    // 操作元素
+    // var cls = document.querySelector('.cls') //获取单个
+    // console.log(cls);
+    //根据选择器获取元素
+    // var cls = document.querySelectorAll('.cls') //获取多个
+    // console.log(cls);
+
+    // html 元素
+    // console.log(document.documentElement);
+    // //body 元素
+    // console.log(document.body);
+    // // head 元素；
+    // console.log(document.head);
+    // // title 
+    // console.log(document.title);  // 得到的是字符串
+    // // forms 得到的是表单的元素集合
+    // console.log(document.forms);
+   
+
+    </script>
+</body>
+</html>

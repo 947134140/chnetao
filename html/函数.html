@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    var fun = function(){
+    //        console.log("函数表达式")
+    //    }
+    //    function fun1(a , b){
+    //        console.log(a + b)
+    //    }
+    //    fun1(5 , 6);
+    //    fun();
+
+    // function sum (a, b , c){
+    //     console.log(a+b+c);
+    //     return(a+b+c);
+    // }
+    // var a =sum(1,2,3)
+    // console.log(a);
+
+        // var a =10;
+        // var b =12;
+        // function num(){
+        //     var a =11;
+        //     console.log(a+b);
+        //     console.log(a);
+        // }
+        // console.log(a);
+        // num();
+
+    //         function ss(num){
+    //     var isz = true;
+    //     for(var a =2; a < num ; a++){
+    //         if(num % a ===0){
+    //             isz = false;
+    //             break;
+    //         }
+    //     }
+    //         return(isz);
+    //         }
+            
+    //   console.log(ss(5))   
+    //   console.log(ss(9))   
+    //   console.log(ss(22))   
+    //   console.log(ss(1804))   
+
+    //    function fun(n,m){
+    //        var s =1;
+    //         for(var a = 0; a<m ; a++){
+    //             s = s * n;
+    //         }
+    //         // return(s);
+    //         console.log(s);
+    //    }
+       
+    // //    console.log(fun(4,3));
+    // var z = fun(4,3);
+    // console.log(z)
+
+    //     function fun(n , b){
+    // //         var n = 4;
+    // // var b = 3;
+    // var jg = 1;
+    // for(var a = 0; a<b; a++){
+    //     jg = jg * n;
+    // }console.log(jg);
+    //     }
+    //     fun (4 , 3);
+
+    // function fun(a , b){
+        // var a = +prompt("输入一个");
+        // var b = +prompt("输入另一个");   
+    //     if (a > b) {
+    //         var c = b;
+    //         b = a;
+    //         a = c;
+    //     }
+    //     // 任何一个数字 都可以当作十位数
+    //     for (var i = a; i <= b; i++) {
+
+    //         for (var j = a; j <= b; j++) {
+    //             var num = i * 10 + j;
+    //             if (num % 2 != 0) {
+    //                 console.log(i + "" + j)
+    //             }
+    //         } 
+
+
+
+
+    //     }
+        
+    // }
+    // fun(parseInt(Math.random()*10),parseInt(Math.random()*10));
+
+/* 
+    某个公司采用公用电话传递数据数据是四位的整数，在传递过程中是加密的
+    加密规则如下：
+    每位数字都加上5
+    然后用除以10的余数代替该数字
+    再将第一位和第四位交换
+    第二位和第三位交换 */
+
+    //1  2  3  5
+    //6  7  8  10
+    //6   7  8  0
+    //0  7  8  6
+    //0  8  7  6
+    
+    function fun(a,b,c,d){
+    var qian = a;
+    var bai = b;
+    var shi = c;
+    var ge = d;
+   
+    var num = 5;
+    
+    qian = parseInt((a + num) % 10);
+    bai = parseInt((b + num) % 10);
+    shi =  parseInt((c + num) % 10);
+    ge =  parseInt((d + num) % 10);
+    
+    var shuzi;
+    shuzi = qian ;
+    qian = ge;
+    ge = shuzi;
+    
+
+    shuzi = bai;
+    bai = shi;
+    shi = shuzi;
+
+    console.log(qian,bai,shi,ge);
+    
+    }
+    fun(1,5,3,9);
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>菜系</th>
+                <th>菜名</th>
+                <th>价格</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+    <script>
+         var arr = [
+            {
+                type_id: 1,
+                name: "大菜",
+                food: [
+                    {
+                        food_id: 1,
+                        name: "鱼香肉丝",
+                        price: 10
+                    },
+
+                    {
+                        food_id: 2,
+                        name: "红烧肉",
+                        price: 10
+                    },
+
+                    {
+                        food_id: 3,
+                        name: "香辣粉",
+                        price: 10
+                    }
+
+                ]
+            },
+            {
+                type_id: 2,
+                name: "中菜",
+                food: [
+                    {
+                        food_id: 4,
+                        name: "小炒肉",
+                        price: 13
+                    },
+                    {
+                        food_id: 5,
+                        name: "云吞",
+                        price: 14
+                    }
+                ]
+            },
+            {
+                type_id: 3,
+                name: '小菜',
+                food: [
+                    {
+                        food_id: 6,
+                        name: "雪糕",
+                        price: 15
+                    },
+                    {
+                        food_id: 7,
+                        name: "黄瓜",
+                        price: 16
+                    }
+                ]
+            }
+        ]
+        var tbody = document.querySelector("tbody");
+        var fragment = document.createDocumentFragment();
+        var str = "";
+        for ( var j = 0 ; j < arr.length ; j++ ){
+            var obj = arr[j];
+            // console.log(obj);
+            var food = obj.food;
+            // console.log(food);
+            for (var i = 0; i < food.length; i++) {
+                str += 
+                ["<tr>",
+                    "<td>" + obj.name + "</td>",
+                    "<td>" + food[i].name + "</td>",
+                    "<td>" + food[i].price + "</td>",
+                "</tr>"].join("");
+            }
+        }
+        tbody.innerHTML = str;
+
+    </script>
+</body>
+</html>
